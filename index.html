@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多項作業缺交登記表</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>多項作業缺交登記表</h1>
+    <div>
+        <button id="editStudent">編輯學生</button>
+        <div id="students" class="button-container">
+            <!-- 學生姓名按鈕 -->
+        </div>
+    </div>
+    <div>
+        <button id="editAssignment">編輯作業</button>
+        <div id="assignments" class="button-container">
+            <!-- 作業名稱按鈕 -->
+        </div>
+    </div>
+    <div>
+        <p>選狀態：</p>
+        <button id="notSubmitted" class="status-button" data-status="未繳交">未繳交</button>
+        <button id="notCompleted" class="status-button" data-status="未完成">未完成</button>
+    </div>
+    <div>
+        <button id="saveToTemp">傳到暫存區</button>
+        <button id="clearTemp">清除暫存區</button>
+    </div>
+    <div id="tempStorage" class="temp-storage">
+        <!-- 顯示暫存區內容 -->
+    </div>
+    <div id="result">
+        <!-- 顯示結果 -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
